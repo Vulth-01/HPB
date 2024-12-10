@@ -3,7 +3,7 @@ body {
   transform-origin: top;
 
   font-family: 'Courier', monospace;
-  background-image: linear-gradient(to right, #555555, #111111);			/* #d78eed, #ed8ed7   */
+  background-image: linear-gradient(to right, #3d2f61, #68485d);			/* #d78eed, #ed8ed7   */
   margin: 0;
   padding: 0;
 }
