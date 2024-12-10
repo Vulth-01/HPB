@@ -73,6 +73,20 @@ body {
   margin-bottom: 30px;
 }
 
+
+.project-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-images img {
+  max-width: 50%;
+  margin: 0 8px;
+}
+
+
 .project-container {
   background-image: linear-gradient(to top right, #789789, #5fb6d9);		/* SECTION FOREGROUND */
   border-radius: 20px;
