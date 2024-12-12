@@ -1,165 +1,126 @@
+/* General Body Styles */
 body {
-    transform: scale(0.75);
-    transform-origin: top;
-  
-    font-family: 'Verdana', monospace;
-    background-image: linear-gradient(to right, #3d2f61, #68485d);			/* #d78eed, #ed8ed7   */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .portfolio-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .portfolio-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  
-                                              /* TITLE */
+  font-family: 'Verdana', monospace;
+  background-image: linear-gradient(to right, #3d2f61, #68485d);  /* Background color */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Portfolio Container */
+.portfolio-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 120px;  /* To ensure content starts below the fixed header */
+}
+
+/* Fixed Header Styles */
+.portfolio-header {
+  position: fixed;  /* Fix the header to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);  /* Semi-transparent background */
+  color: white;
+  z-index: 1000;  /* Ensure it's on top of other content */
+  padding: 20px 0;  /* Space within the header */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Shadow effect for header */
+  transition: top 0.3s ease;  /* Smooth transition for animations */
+}
+
+/* Header Title */
+.portfolio-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #eb88d4;  /* Title color */
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Header Navigation */
+.portfolio-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.portfolio-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.portfolio-nav ul li a {
+  color: #edc0fa;  /* Link color */
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-nav ul li a:hover {
+  color: #ffffff;  /* Hover color */
+}
+
+/* Section Styles */
+.portfolio-section {
+  background-image: linear-gradient(to top right, #77dacc, #9269dd);  /* Section background */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+/* Project Section Content */
+.portfolio-content {
+  text-align: center;
+}
+
+.portfolio-description {
+  font-size: 18px;
+  color: #616161;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+
+
+.project {
+  text-align: center;
+}
+
+/* Image Styling */
+.project-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-images img {
+  max-width: 50%;
+  margin: 0 8px;
+}
+
+.half-size {
+  width: 50%;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
   .portfolio-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #ff5cd9; 									/*#bbffff/#d1dfff;*/	
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .portfolio-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .portfolio-nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .portfolio-nav ul li a {
-    color: #edc0fa;									/* TEXT */
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-  }
-  
-  .portfolio-nav ul li a:hover {
-    color: #ffffff;									/* DARK GREY */
-  }
-  
-  .portfolio-section {
-    background-image: linear-gradient(to top right, #245c78, #a5b9f0);			/* ddb1fc SECTION BACKGROUND */
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .portfolio-content {
-    text-align: center;
-  }
-  
-  .portfolio-description {
-    font-size: 18px;
-    color: #616161;									/* ABOUT ME TEXT */
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-  
-  
-  .project-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .project-images img {
-    max-width: 50%;
-    margin: 0 8px;
-  }
-  
-  
-  .project-container {
-    background-image: linear-gradient(to top right, #789789, #5fb6d9);		/* SECTION FOREGROUND */
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    animation: float 5s ease-in-out infinite alternate;
-    margin-bottom: 20px;
-  }
-  
-  .project-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #57fff1;									/* SECTION TITLE */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .project-description {
-    font-size: 18px;
-    color: #7cf7eb;									/* SECTION DESCRIPTION */
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-  
-  .project-link {
-    display: inline-block;
-    padding: 14px 28px;
-    background-image: linear-gradient(to top right, #7d51ac 10%, #51b9c3);		/* BUTTON BACKGROUND */
-    color: #ffffff;									/* WHITE */
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: 2px solid #b0ebe0;								/* BUTTON BORDER */
-    overflow: hidden;
-  }
-  
-  .project-link:hover {
-    background-image: linear-gradient(to top right, #b288cf 10%, #62bcc4);		/* DARKER ON HOVER */
-    color: #ffffff;									/* WHITE */
-  }
-  
-  .project-link::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%;
-    height: 300%;
-    background-color: #007bff;								/* WHITE */
-    border-radius: 50%;
-    transition: all 0.5s ease;
-    z-index: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  /*
-  .project-link:hover::before {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  */
-  .project-link span {
-    position: relative;
-    z-index: 1;
+    font-size: 28px;
   }
 
-  .half-size {
-    width: 50%;  /* This will make the image half the width of its container */
-    height: 0.5; /* This keeps the aspect ratio of the image intact */
+  .portfolio-nav ul li a {
+    font-size: 16px;
   }
-  
+
+  .project-images img {
+    max-width: 80%;
+  }
+}
