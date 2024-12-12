@@ -1,45 +1,40 @@
-/* General Body Styles */
 body {
   font-family: 'Verdana', monospace;
-  background-image: linear-gradient(to right, #3d2f61, #68485d);  /* Background color */
+  background-image: linear-gradient(to right, #3d2f61, #68485d);
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
-/* HPB Container */
 .hpb-container {
   max-width: 700px;
   margin: 0 auto;
-  padding-top: 120px;  /* To ensure content starts below the fixed header */
+  padding-top: 120px;
 }
 
-/* Fixed Header Styles */
 .hpb-header {
-  position: fixed;  /* Fix the header to the top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);  /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  z-index: 1000;  /* Ensure it's on top of other content */
-  padding: 20px 0;  /* Space within the header */
+  z-index: 1000;
+  padding: 20px 0;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Shadow effect for header */
-  transition: top 0.3s ease;  /* Smooth transition for animations */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: top 0.3s ease;
 }
 
-/* Header Title */
 .hpb-title {
   font-size: 36px;
   font-weight: bold;
-  color: #eb88d4;  /* Title color */
+  color: #eb88d4;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* Header Navigation */
 .hpb-nav ul {
   list-style-type: none;
   padding: 0;
@@ -53,7 +48,7 @@ body {
 }
 
 .hpb-nav ul li a {
-  color: #edc0fa;  /* Link color */
+  color: #edc0fa;
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
@@ -62,19 +57,17 @@ body {
 }
 
 .hpb-nav ul li a:hover {
-  color: #ffffff;  /* Hover color */
+  color: #ffffff;
 }
 
-/* Section Styles */
 .hpb-section {
-  background-image: linear-gradient(to top right, #77dacc, #9269dd);  /* Section background */
+  background-image: linear-gradient(to top right, #77dacc, #9269dd);
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 40px;
   margin-bottom: 40px;
 }
 
-/* Project Section Content */
 .hpb-content {
   text-align: center;
 }
@@ -90,7 +83,6 @@ body {
   text-align: center;
 }
 
-/* Image Styling */
 .project-images {
   display: flex;
   justify-content: center;
@@ -107,7 +99,6 @@ body {
   width: 50%;
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .hpb-title {
     font-size: 28px;
