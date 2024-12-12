@@ -7,15 +7,15 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Portfolio Container */
-.portfolio-container {
+/* HPB Container */
+.hpb-container {
   max-width: 700px;
   margin: 0 auto;
   padding-top: 120px;  /* To ensure content starts below the fixed header */
 }
 
 /* Fixed Header Styles */
-.portfolio-header {
+.hpb-header {
   position: fixed;  /* Fix the header to the top */
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 /* Header Title */
-.portfolio-title {
+.hpb-title {
   font-size: 36px;
   font-weight: bold;
   color: #eb88d4;  /* Title color */
@@ -40,19 +40,19 @@ body {
 }
 
 /* Header Navigation */
-.portfolio-nav ul {
+.hpb-nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: inline-block;
 }
 
-.portfolio-nav ul li {
+.hpb-nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
-.portfolio-nav ul li a {
+.hpb-nav ul li a {
   color: #edc0fa;  /* Link color */
   text-decoration: none;
   font-size: 18px;
@@ -61,12 +61,12 @@ body {
   transition: color 0.3s ease;
 }
 
-.portfolio-nav ul li a:hover {
+.hpb-nav ul li a:hover {
   color: #ffffff;  /* Hover color */
 }
 
 /* Section Styles */
-.portfolio-section {
+.hpb-section {
   background-image: linear-gradient(to top right, #77dacc, #9269dd);  /* Section background */
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -75,19 +75,16 @@ body {
 }
 
 /* Project Section Content */
-.portfolio-content {
+.hpb-content {
   text-align: center;
 }
 
-.portfolio-description {
+.hpb-description {
   font-size: 18px;
   color: #616161;
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
-
-
 
 .project {
   text-align: center;
@@ -112,11 +109,11 @@ body {
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-  .portfolio-title {
+  .hpb-title {
     font-size: 28px;
   }
 
-  .portfolio-nav ul li a {
+  .hpb-nav ul li a {
     font-size: 16px;
   }
 
